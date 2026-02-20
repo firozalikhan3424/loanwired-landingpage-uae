@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loanwired UAE | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Loanwired <span>UAE</span></a>
+      <div class="nav-links">
+        <a class="link-item" href="index.html" data-i18n="nav_home">Home</a>
+        <a class="link-item" href="about.html" data-i18n="nav_about">About</a>
+        <a class="link-item" href="loans.html" data-i18n="nav_loans">Loans</a>
+        <a class="link-item" href="approach.html" data-i18n="nav_approach">Approach</a>
+        <a class="link-item" href="success-stories.html" data-i18n="nav_success">Success Stories</a>
+        <a class="link-item" href="contact.html" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="ar">AR</button></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="contact_title">Contact Loanwired UAE</h1>
+      <p data-i18n="contact_desc">Speak to our loan specialists for tailored financing options in the UAE.</p>
+    </div>
+  </section>
+
+  <section class="section container grid-2">
+    <article class="card">
+      <h3 data-i18n="contact_visit">Office</h3>
+      <p data-i18n="contact_address">Dubai, United Arab Emirates</p>
+      <h3 data-i18n="contact_email">Email</h3>
+      <p>hello@loanwired.ae</p>
+      <h3 data-i18n="contact_phone_label">Phone</h3>
+      <p>+971 4 000 0000</p>
+    </article>
+    <article class="card">
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" data-i18n-placeholder="f_name" required />
+        <input type="text" placeholder="Company Name" data-i18n-placeholder="f_company" required />
+        <input type="tel" placeholder="Phone Number" data-i18n-placeholder="f_phone" required />
+        <textarea placeholder="Message" data-i18n-placeholder="f_msg" rows="5" required></textarea>
+        <button class="btn btn-primary" type="submit" data-i18n="f_submit">Submit Inquiry</button>
+      </form>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong data-i18n="footer_tagline">Loanwired — Smart Lending Platform for UAE Businesses</strong></p>
+      <p data-i18n="footer_sub">Secure • Transparent • Technology-Driven Financing</p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

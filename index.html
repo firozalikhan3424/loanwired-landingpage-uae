@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loanwired UAE | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Loanwired <span>UAE</span></a>
+      <div class="nav-links">
+        <a class="link-item" href="index.html" data-i18n="nav_home">Home</a>
+        <a class="link-item" href="about.html" data-i18n="nav_about">About</a>
+        <a class="link-item" href="loans.html" data-i18n="nav_loans">Loans</a>
+        <a class="link-item" href="approach.html" data-i18n="nav_approach">Approach</a>
+        <a class="link-item" href="success-stories.html" data-i18n="nav_success">Success Stories</a>
+        <a class="link-item" href="contact.html" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switch"><button data-lang="en">EN</button><button data-lang="ar">AR</button></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow" data-i18n="hero_eyebrow">UAE Business Lending Platform</p>
+        <h1 data-i18n="hero_title">Smart Financing Solutions Built for UAE Businesses</h1>
+        <p data-i18n="hero_desc">Loanwired helps UAE companies access fast capital through intelligent matching and digital-first processing for Mortgage Loan, Supply Chain Loan, and Invoice Loan.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#hero-inquiry" data-i18n="apply_btn">Apply For Loan</a>
+          <a class="btn btn-secondary" href="contact.html" data-i18n="consult_btn">Get Free Consultation</a>
+        </div>
+        <div class="metrics">
+          <div><strong>5000+</strong><span data-i18n="metric1_label">Loan Inquiries</span></div>
+          <div><strong>AED 200M+</strong><span data-i18n="metric2_label">Funding Facilitated</span></div>
+          <div><strong>24h</strong><span data-i18n="metric3_label">Fast Response</span></div>
+        </div>
+      </div>
+      <aside class="card hero-form" id="hero-inquiry">
+        <h2 data-i18n="form_title">Start Your Loan Application Today</h2>
+        <p data-i18n="form_desc">Tell us your requirements and our UAE loan specialists will connect you with suitable funding partners.</p>
+        <form class="inquiry-form">
+          <input type="text" placeholder="Full Name" data-i18n-placeholder="f_name" required />
+          <input type="text" placeholder="Company Name" data-i18n-placeholder="f_company" required />
+          <input type="tel" placeholder="Phone Number" data-i18n-placeholder="f_phone" required />
+          <select required>
+            <option value="" data-i18n="f_loan_type">Loan Type (Supply Chain / Mortgage / Invoice)</option>
+            <option data-i18n="scf_title">Supply Chain Loan</option>
+            <option data-i18n="mortgage_title">Mortgage Loan</option>
+            <option data-i18n="invoice_title">Invoice Loan</option>
+          </select>
+          <input type="number" placeholder="Funding Amount" data-i18n-placeholder="f_amount" required />
+          <textarea placeholder="Message" data-i18n-placeholder="f_msg" rows="3"></textarea>
+          <button class="btn btn-primary" type="submit" data-i18n="f_submit">Submit Inquiry</button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section container" id="solutions">
+    <h2 data-i18n="home_loans_title">Our Loan Solutions</h2>
+    <div class="grid-3">
+      <article class="card loan-card">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80" alt="Mortgage" />
+        <h3 data-i18n="mortgage_title">Mortgage Loan</h3>
+        <p data-i18n="mortgage_desc">Access competitive residential and commercial property financing with simplified approvals and transparent guidance tailored to UAE market needs.</p>
+      </article>
+      <article class="card loan-card">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="Supply Chain" />
+        <h3 data-i18n="scf_title">Supply Chain Loan</h3>
+        <p data-i18n="scf_desc">Improve working capital, accelerate supplier payments, and stabilize cash cycles through structured financing built for UAE commerce.</p>
+      </article>
+      <article class="card loan-card">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80" alt="Invoice" />
+        <h3 data-i18n="invoice_title">Invoice Loan</h3>
+        <p data-i18n="invoice_desc">Unlock cash tied in receivables by converting approved invoices into immediate funding so your business can continue growing without delay.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h2 data-i18n="calc_title">Loan Calculator</h2>
+      <p data-i18n="calc_desc">Estimate monthly payments and compare loan options before you apply.</p>
+      <div class="card calculator">
+        <label>Loan Amount (AED)
+          <input id="loanAmount" type="number" min="0" value="500000" />
+        </label>
+        <label>Annual Interest Rate (%)
+          <input id="interestRate" type="number" min="0" step="0.1" value="8" />
+        </label>
+        <label>Tenure (Years)
+          <input id="loanYears" type="number" min="1" value="5" />
+        </label>
+        <button id="calculateBtn" class="btn btn-primary" type="button" data-i18n="calc_btn">Calculate Monthly Payment</button>
+        <p id="calculatorOutput" class="result">Monthly Payment: AED 0.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong data-i18n="footer_tagline">Loanwired — Smart Lending Platform for UAE Businesses</strong></p>
+      <p data-i18n="footer_sub">Secure • Transparent • Technology-Driven Financing</p>
+    </div>
+  </footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
